@@ -15,15 +15,15 @@ while row_index < directors_database.length do
   puts "Row #{row_index} has #{vm[row_index]} columns"
 
   column_index = 0
-  while column_index < vm[row_index].length do
+  while column_index < directors_database[row_index].length do
     coord = "#{row_index}, #{column_index}"
-    inner_len = vm[row_index][column_index].length
+    inner_len = directors_database[row_index][column_index].length
     # Remember \t is a TAB character for indentation
-    puts "\tCoordinate [#{coord}] points to an #{vm[row_index][column_index].class} of length #{inner_len}"
+    puts "\tCoordinate [#{coord}] points to an #{directors_database[row_index][column_index].class} of length #{inner_len}"
 
     inner_index = 0
     while inner_index < inner_len do
-      puts "\t\t (#{coord}, #{inner_index}) is: #{vm[row_index][column_index][inner_index]}"
+      puts "\t\t (#{coord}, #{inner_index}) is: #{directors_database[row_index][column_index][inner_index]}"
       inner_index += 1
     end
 
