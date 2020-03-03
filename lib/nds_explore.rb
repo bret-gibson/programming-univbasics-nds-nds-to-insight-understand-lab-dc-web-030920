@@ -14,8 +14,9 @@ def print_first_directors_movie_titles
   while row_index < directors_database.length do
     if row_index == 0
     puts directors_database[0][:name][:movies][element_index][:title]
+    column_index = 0
   end
-    while column_index < directors_database[row_index].length do
+    while column_index < directors_database[row_index][:movies].length do
 
       column_index += 1
     end
