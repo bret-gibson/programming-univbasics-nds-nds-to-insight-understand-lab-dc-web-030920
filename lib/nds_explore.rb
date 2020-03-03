@@ -17,7 +17,7 @@ def print_first_directors_movie_titles
       column_index = 0
       while column_index < directors_database[row_index][:movies].length do
         print_string += "#{directors_database[row_index][:movies][column_index][:title]}\n"
-        column_index += 1
+        #column_index += 1
       end
     end
     row_index += 1
