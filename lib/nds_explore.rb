@@ -9,7 +9,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  pretty_print_nds(directors_database)
+  #pretty_print_nds(directors_database)
   row_index = 0
   print_string = ""
   while row_index < directors_database.length do
