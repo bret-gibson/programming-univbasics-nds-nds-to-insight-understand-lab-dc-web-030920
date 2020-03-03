@@ -17,12 +17,9 @@ def print_first_directors_movie_titles
       column_index = 0
       while column_index < directors_database[row_index][:movies].length do
         puts directors_database[row_index][:movies][column_index][:title]
-      #  print_string += directors_database[row_index][:movies][column_index][:title] + "\n"
-        #puts column_index
         column_index += 1
       end
     end
     row_index += 1
   end
-  #puts print_string
 end
